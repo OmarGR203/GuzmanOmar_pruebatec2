@@ -46,7 +46,7 @@ Este proyecto es un sistema de gestión de citas que permite a un unico superusu
 ### Interfaz de la pagina principal
 ![Imagen del repositorio](https://github.com/OmarGR203/GuzmanOmar_pruebatec2/blob/master/Index.png)
 ### Interfaz de la gestión de tramites
-![Imagen del repositorio]([https://github.com/OmarGR203/GuzmanOmar_pruebatec1/blob/master/ImagenPruebas.png](https://github.com/OmarGR203/GuzmanOmar_pruebatec2/blob/master/Gestion%20de%20tramites.png))
+![Imagen del repositorio](https://github.com/OmarGR203/GuzmanOmar_pruebatec2/blob/master/Gestion%20de%20tramites.png)
 
 ## Supuestos
 
