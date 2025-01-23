@@ -43,7 +43,10 @@ Este proyecto es un sistema de gestión de citas que permite a un unico superusu
 - Navegador Web compatible
 
 ## Imagenes
-
+### Interfaz de la pagina principal
+![Imagen del repositorio](https://github.com/OmarGR203/GuzmanOmar_pruebatec1/blob/master/ImagenPruebas.png](https://github.com/OmarGR203/GuzmanOmar_pruebatec2/blob/master/Index.png))
+### Interfaz de la gestión de tramites
+![Imagen del repositorio](https://github.com/OmarGR203/GuzmanOmar_pruebatec1/blob/master/ImagenPruebas.png](https://github.com/OmarGR203/GuzmanOmar_pruebatec2/blob/master/Gestion%20de%20tramites.png)
 
 ## Supuestos
 
@@ -57,7 +60,7 @@ Este proyecto es un sistema de gestión de citas que permite a un unico superusu
 ## Diagramas
 
 ### Diagrama de Clases
-![Imagen del repositorio]([https://github.com/OmarGR203/GuzmanOmar_pruebatec1/blob/master/ImagenPruebas.png](https://github.com/OmarGR203/GuzmanOmar_pruebatec1/blob/master/ImagenPruebas.png))
+![Imagen del repositorio]([https://github.com/OmarGR203/GuzmanOmar_pruebatec1/blob/master/ImagenPruebas.png](https://github.com/OmarGR203/GuzmanOmar_pruebatec2/blob/master/Diagrama%20de%20Clases%20Gestor%20de%20Citas%20Gubernamentales.png)
 
 ## Contacto
-
+Email: oguzma20@gmail.com
