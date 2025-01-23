@@ -50,11 +50,10 @@ Este proyecto es un sistema de gestión de citas que permite a un unico superusu
 
 ## Supuestos
 
-- Los ciudadanos están previamente registrados en el sistema.
-- Los usuarios administradores tienen acceso a las vistas y funcionalidades de gestión de citas.
+- Hasta el momento solo se cuenta con un único superusuario para la gestión de todo el sistema.
 - Los trámites disponibles son definidos previamente por un administrador.
 - El estado inicial de cada cita es "En espera" al ser creada.
-
+- El número de cita se considero como el id general.
 
 
 ## Diagramas
