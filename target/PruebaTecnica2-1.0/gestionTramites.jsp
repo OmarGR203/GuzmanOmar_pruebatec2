@@ -76,9 +76,9 @@
                         <tbody>
                         <c:forEach var="procedure" items="">
                             <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td>001</td>
+                                <td>Acta de nacimiento certificada</td>
+                                <td>Acudir a registro civil y solicitar el tramite, asi como la orden de pago</td>
                                 <td>
                                     <button class="btn btn-sm btn-primary" onclick="editProcedure('')">Editar</button>
                                     <button class="btn btn-sm btn-danger" onclick="deleteProcedure('')">Eliminar</button>
