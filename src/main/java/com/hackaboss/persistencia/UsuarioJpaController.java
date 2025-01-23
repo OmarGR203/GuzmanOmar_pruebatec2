@@ -9,6 +9,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
@@ -132,5 +133,22 @@ public class UsuarioJpaController implements Serializable {
             em.close();
         }
     }
+
+    Usuario findUserByEmail(String email) {
+                     
+        EntityManager em =getEntityManager();
+        
+        try {
+            String consulta = "SELECT usu FROM Usuario usu WHERE usu.email = :email";
+            Query query = em.createQuery(consulta);
+            query.setParameter("email",email);
+            return (Usuario) query.getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
+        finally {
+            em.close();
+        }
+   }
 
 }

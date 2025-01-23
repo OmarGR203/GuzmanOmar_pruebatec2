@@ -11,7 +11,7 @@ com\hackaboss\logica\exceptions\PreexistingEntityException.class
 com\hackaboss\logica\Usuario.class
 com\hackaboss\logica\Tramite_.class
 com\hackaboss\servlets\CrearCitaSv.class
-com\hackaboss\logica\CiudadanoJpaController.class
+com\hackaboss\servlets\LoginSV.class
 com\hackaboss\persistencia\CitaJpaController.class
 com\hackaboss\persistencia\exceptions\IllegalOrphanException.class
 com\hackaboss\logica\ControladoraLogica.class

@@ -7,7 +7,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Gestión de trámites</title>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
-               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="./css/styles.css"/>
     </head>
     <body>
@@ -37,20 +37,20 @@
                     </div>
 
                     <form action="index.jsp">
-                        <nav class="nav flex-column active">
-                            <button class="nav-link">
+                        <nav class="nav flex-column">
+                            <button class="nav-link active" >
                                 <i class="bi bi-calendar"></i> Citas
                             </button>
                     </form>
 
                     <form action="gestionCiudadano.jsp">
-                        <button class="nav-link">
+                        <button class="nav-link active">
                             <i class="bi bi-people"></i> Ciudadanos
                         </button>
                     </form>
 
                     <form action="gestionTramites.jsp">   
-                        <button class="nav-link active">
+                        <button class="nav-link " style="color:#000000"
                             <i class="bi bi-file-text"></i> Trámites
                         </button>
                     </form> 
@@ -74,14 +74,14 @@
                             </tr>
                         </thead>
                         <tbody>
-                        <c:forEach var="procedure" items="${procedures}">
+                        <c:forEach var="procedure" items="">
                             <tr>
-                                <td>${procedure.id}</td>
-                                <td>${procedure.name}</td>
-                                <td>${procedure.description}</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
                                 <td>
-                                    <button class="btn btn-sm btn-primary" onclick="editProcedure('${procedure.id}')">Editar</button>
-                                    <button class="btn btn-sm btn-danger" onclick="deleteProcedure('${procedure.id}')">Eliminar</button>
+                                    <button class="btn btn-sm btn-primary" onclick="editProcedure('')">Editar</button>
+                                    <button class="btn btn-sm btn-danger" onclick="deleteProcedure('')">Eliminar</button>
                                 </td>
                             </tr>
                         </c:forEach>

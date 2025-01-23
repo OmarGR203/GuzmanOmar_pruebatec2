@@ -40,7 +40,7 @@
 
                     <form action="index.jsp">
                         <nav class="nav flex-column">
-                            <button class="nav-link">
+                            <button class="nav-link" style="color:#000000">
                                 <i class="bi bi-calendar"></i> Citas
                             </button>
                     </form>
@@ -63,7 +63,7 @@
                 <!-- crear cita -->
                 <div class="col-md-9 col-lg-10 ms-sm-auto px-4 py-3">
                     <div class="d-flex justify-content-between align-items-center mb-4">
-                        <h2>Gestión de Citas</h2>
+                        <h2> Citas</h2>
 
                         <form action="crearCita.jsp">
                             <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="crearCita">
