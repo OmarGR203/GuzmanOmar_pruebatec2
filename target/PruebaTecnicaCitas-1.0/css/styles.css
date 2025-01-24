@@ -1,0 +1,135 @@
+html,body {
+    height: 100%;
+}
+
+.global-container{
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
+
+form{
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.card-title{
+    font-weight:300;
+}
+
+.btn{
+    font-size: 14px;
+    margin-top:20px;
+}
+
+
+.login-form{
+    width:330px;
+    margin:20px;
+}
+
+.sign-up{
+    text-align:center;
+    padding:20px 0 0;
+}
+
+.alert{
+    margin-bottom:-30px;
+    font-size: 13px;
+    margin-top:20px;
+}
+
+.barra-superior {
+    background-color:  #34495E;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+}
+.barra-superior .logo span {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.barra-superior .datos-sesion {
+    font-size: 20px;
+}
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4895ef;
+    --background-color: #f8f9fa;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.sidebar {
+    background: var(--primary-color);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.sidebar .nav-link {
+    color: white;
+    opacity: 0.8;
+    padding: 12px 20px;
+    margin: 4px 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.stats-card {
+    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
+    color: white;
+}
+
+.btn-custom {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.status-badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+}
+
+.status-waiting {
+    background-color: #ffd60a;
+    color: #000;
+}
+
+.status-completed {
+    background-color: #52b788;
+    color: white;
+}

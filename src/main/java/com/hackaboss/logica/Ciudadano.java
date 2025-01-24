@@ -1,3 +1,4 @@
+
 package com.hackaboss.logica;
 
 import java.io.Serializable;
@@ -17,7 +18,7 @@ public class Ciudadano implements Serializable {
     private String aPaterno;
     private String aMaterno;
     
-    @Column(nullable=false)
+    @Column(unique = true, nullable=false)
     private String curp;
     
     @Column(nullable=false)
@@ -86,7 +87,4 @@ public class Ciudadano implements Serializable {
 
 
 
-
-   
-    
 }

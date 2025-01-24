@@ -2,6 +2,7 @@
 package com.hackaboss.persistencia;
 
 import com.hackaboss.logica.Tramite;
+import com.hackaboss.logica.Usuario;
 import com.hackaboss.persistencia.exceptions.NonexistentEntityException;
 import java.io.Serializable;
 import java.util.List;
@@ -9,14 +10,15 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
 
 public class TramiteJpaController implements Serializable {
-
-    public TramiteJpaController() {
+    
+        public TramiteJpaController() {
         emf = Persistence.createEntityManagerFactory("turneroPU");
     }
 
@@ -133,4 +135,22 @@ public class TramiteJpaController implements Serializable {
         }
     }
 
+        Tramite findTramiteByNombre(String nombreTramite) {
+          
+        EntityManager em =getEntityManager();
+        
+        try {
+            //consulta JPQL para buscar por apellido
+            String consulta = "SELECT tra FROM Tramite tra WHERE tra.nombre = :nombreTramite";
+            Query query = em.createQuery(consulta);
+            query.setParameter("nombreTramite",nombreTramite);
+            return (Tramite) query.getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
+        finally {
+            em.close();
+        }
+    } 
+    
 }

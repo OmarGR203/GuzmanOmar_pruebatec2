@@ -6,10 +6,10 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import javax.persistence.*;
 
-@Entity
+@Entity        
 public class Cita implements Serializable {
     
-    @Id
+     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private long id;
     
@@ -105,10 +105,4 @@ public class Cita implements Serializable {
     
     
 
-    
-    
-    
-    
-    
-    
 }

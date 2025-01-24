@@ -63,7 +63,7 @@
                 <!-- crear cita -->
                 <div class="col-md-9 col-lg-10 ms-sm-auto px-4 py-3">
                     <div class="d-flex justify-content-between align-items-center mb-4">
-                        <h2> Citas</h2>
+                        <h1> Citas</h1>
 
                         <form action="crearCita.jsp">
                             <button class="btn btn-custom" data-bs-toggle="modal" data-bs-target="crearCita">
@@ -72,32 +72,6 @@
                         </form> 
                     </div>
 
-                    <div class="row mb-4">
-                        <div class="col-md-4">
-                            <div class="card stats-card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Citas Hoy</h5>
-                                    <h2 class="mb-0">24</h2> <!-- traercitas -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card stats-card">
-                                <div class="card-body">
-                                    <h5 class="card-title">En Espera</h5>
-                                    <h2 class="mb-0">12</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="card stats-card">
-                                <div class="card-body">
-                                    <h5 class="card-title">Atendidos</h5>
-                                    <h2 class="mb-0">8</h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
                     <!-- Filters -->
                     <div class="card mb-4">

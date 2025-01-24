@@ -1,3 +1,4 @@
+
 package com.hackaboss.persistencia;
 
 import com.hackaboss.logica.Cita;
@@ -12,9 +13,10 @@ import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-public class CitaJpaController implements Serializable {
 
-    public CitaJpaController() {
+public class CitaJpaController implements Serializable {
+    
+    public CitaJpaController(){
         emf = Persistence.createEntityManagerFactory("turneroPU");
     }
 
@@ -130,5 +132,5 @@ public class CitaJpaController implements Serializable {
             em.close();
         }
     }
-
+    
 }

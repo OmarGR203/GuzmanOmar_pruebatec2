@@ -1,6 +1,6 @@
-
 package com.hackaboss.servlets;
 
+import com.hackaboss.logica.ControladoraLogica;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,26 +10,35 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(name = "CiudadanoSv", urlPatterns = {"/CiudadanoSv"})
 public class CiudadanoSv extends HttpServlet {
+    ControladoraLogica control = new ControladoraLogica();
 
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
 
     }
-
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
+
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        
-    }
 
+        String nombre = request.getParameter("nombre");
+        String aPaterno = request.getParameter("aPaterno");
+        String aMaterno = request.getParameter("aMaterno");
+        String curp = request.getParameter("curp");
+        String telefono = request.getParameter("telefono");
+
+        control.crearCiudadano(nombre, aPaterno, aMaterno, curp, telefono);
+
+        
+        response.sendRedirect("gestionCiudadano.jsp");
+
+    }
 
     @Override
     public String getServletInfo() {

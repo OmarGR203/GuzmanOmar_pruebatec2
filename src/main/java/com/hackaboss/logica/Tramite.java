@@ -1,21 +1,18 @@
-
 package com.hackaboss.logica;
 
 import java.io.Serializable;
 import javax.persistence.*;
 
-
 @Entity
 public class Tramite implements Serializable {
-    
+
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    
-    @Column(nullable=false)
+
+    @Column(unique = true, nullable = false)
     private String nombre;
     private String descripcion;
-    
 
     public Tramite() {
     }
@@ -24,8 +21,6 @@ public class Tramite implements Serializable {
         this.nombre = nombre;
         this.descripcion = descripcion;
     }
-    
-
 
     public long getId() {
         return id;
@@ -51,12 +46,4 @@ public class Tramite implements Serializable {
         this.descripcion = descripcion;
     }
 
-
-    
-    
-    
-    
-   
-    
-    
 }

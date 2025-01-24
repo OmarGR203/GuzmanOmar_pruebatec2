@@ -1,22 +1,17 @@
 
 package com.hackaboss.persistencia;
 
-import com.hackaboss.logica.Ciudadano;
+import com.hackaboss.logica.*;
 import com.hackaboss.persistencia.exceptions.NonexistentEntityException;
 import java.io.Serializable;
 import java.util.List;
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Query;
-import javax.persistence.EntityNotFoundException;
-import javax.persistence.Persistence;
+import javax.persistence.*;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-
 public class CiudadanoJpaController implements Serializable {
-    
-    public CiudadanoJpaController(){
+
+    public CiudadanoJpaController() {
         emf = Persistence.createEntityManagerFactory("turneroPU");
     }
 
@@ -132,5 +127,31 @@ public class CiudadanoJpaController implements Serializable {
             em.close();
         }
     }
-    
+
+
+
+    Ciudadano findCiudadanoByCurp(String curp) {
+               
+        EntityManager em =getEntityManager();
+        
+        try {
+            //consulta JPQL para buscar por apellido
+            String consulta = "SELECT ciud FROM Ciudadano ciud WHERE ciud.curp = :curp";
+            Query query = em.createQuery(consulta);
+            query.setParameter("curp",curp);
+            return (Ciudadano) query.getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
+        finally {
+            em.close();
+        }
+    }
+
+    Tramite findTramitebyNombre(String nombreTramite) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+        
+   
+
 }

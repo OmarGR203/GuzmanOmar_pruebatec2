@@ -71,11 +71,14 @@
                                 <th>Apellido Paterno</th>
                                 <th>Apellido Materno</th>
                                 <th>Telefono</th>
+                                <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                         <c:forEach var="citizen" items="">
                             <tr>
+                                <td></td>
+                                <td></td>
                                 <td></td>
                                 <td></td>
                                 <td></td>
@@ -89,7 +92,6 @@
                     </table>
                 </div>
 
-                <!-- New Citizen Modal -->
                 <form action="CiudadanoSv" method="POST">
                     <div class="modal fade" id="newCitizenModal" tabindex="-1" aria-labelledby="newCitizenModalLabel" aria-hidden="true">
                         <div class="modal-dialog">

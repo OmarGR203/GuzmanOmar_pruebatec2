@@ -1,4 +1,3 @@
-
 package com.hackaboss.logica;
 
 import java.io.Serializable;
@@ -6,20 +5,20 @@ import javax.persistence.*;
 
 @Entity
 public class Usuario implements Serializable {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    
-    @Column(unique=true, nullable= false)
+
+    @Column(unique = true, nullable = false)
     private String email;
-    @Column(nullable= false)   
+    @Column(nullable = false)
     private String password;
 
     public Usuario() {
     }
 
-    public Usuario( String email, String password) {
+    public Usuario(String email, String password) {
         this.email = email;
         this.password = password;
     }
@@ -53,6 +52,4 @@ public class Usuario implements Serializable {
         return "Usuario{" + "id=" + id + ", email=" + email + ", password=" + password + '}';
     }
 
-    
-    
 }
