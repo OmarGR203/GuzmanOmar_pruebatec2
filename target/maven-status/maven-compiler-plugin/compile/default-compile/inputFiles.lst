@@ -1,17 +1,23 @@
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\logica\ControladoraLogica.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\servlets\TramiteSv.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\persistencia\ControladoraPersistencia.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\logica\Ciudadano.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\persistencia\CiudadanoJpaController.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\persistencia\exceptions\PreexistingEntityException.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\persistencia\UsuarioJpaController.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\servlets\CitaSv.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\persistencia\TramiteJpaController.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\logica\Tramite.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\persistencia\CitaJpaController.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\servlets\LoginSv.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\servlets\CiudadanoSv.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\persistencia\exceptions\IllegalOrphanException.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\logica\Cita.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\persistencia\exceptions\NonexistentEntityException.java
-C:\Users\oguzm\OneDrive\Escritorio\Prueba Tecnica 2 nvo\PruebaTecnicaCitas\src\main\java\com\hackaboss\logica\Usuario.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\persistencia\exceptions\NonexistentEntityException.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\servlets\EditarCitaSv.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\logica\Ciudadano.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\persistencia\ControladoraPersistencia.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\logica\Cita.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\servlets\EliminarTramiteSv.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\persistencia\CiudadanoJpaController.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\persistencia\UsuarioJpaController.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\logica\Tramite.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\servlets\CiudadanoSv.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\servlets\LoginSv.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\servlets\EditarCiudadanoSv.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\persistencia\CitaJpaController.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\persistencia\TramiteJpaController.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\servlets\EditarTramiteSv.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\servlets\TramiteSv.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\servlets\CitaSv.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\servlets\EliminarCitaSv.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\logica\ControladoraLogica.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\logica\Usuario.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\persistencia\exceptions\IllegalOrphanException.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\persistencia\exceptions\PreexistingEntityException.java
+C:\Users\oguzm\OneDrive\Escritorio\PruebaTecnica2\src\main\java\com\hackaboss\servlets\EliminarCiudadanoSv.java

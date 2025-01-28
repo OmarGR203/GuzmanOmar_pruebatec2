@@ -1,12 +1,15 @@
 package com.hackaboss.servlets;
 
+import com.hackaboss.logica.Ciudadano;
 import com.hackaboss.logica.ControladoraLogica;
 import java.io.IOException;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet(name = "CiudadanoSv", urlPatterns = {"/CiudadanoSv"})
 public class CiudadanoSv extends HttpServlet {
@@ -20,6 +23,14 @@ public class CiudadanoSv extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        String busquedaNombreC = request.getParameter("busquedaNombreC");
+        
+        
+        List<Ciudadano> listaCiudadanos = control.buscarPorNombre(busquedaNombreC);
+        HttpSession miSesion = request.getSession();
+        miSesion.setAttribute("listaCiudadanos", listaCiudadanos);
+        
+         response.sendRedirect("gestionCiudadano.jsp");
 
     }
 

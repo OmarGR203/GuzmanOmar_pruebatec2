@@ -127,17 +127,13 @@ public class UsuarioJpaController implements Serializable {
         }
     }
 
-
-
-    Usuario findUserAdmin(String admin) {
-             
-        EntityManager em =getEntityManager();
+    Usuario findUserByEmail(String email) {
+          EntityManager em =getEntityManager();
         
         try {
-            //consulta JPQL para buscar por apellido
-            String consulta = "SELECT usu FROM Usuario usu WHERE usu.email = :admin";
+            String consulta = "SELECT usu FROM Usuario usu WHERE usu.email = :email";
             Query query = em.createQuery(consulta);
-            query.setParameter("admin",admin);
+            query.setParameter("email",email);
             return (Usuario) query.getSingleResult();
         } catch (NoResultException e) {
             return null;
@@ -145,6 +141,6 @@ public class UsuarioJpaController implements Serializable {
         finally {
             em.close();
         }
-    } 
+     }
 
 }

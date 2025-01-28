@@ -20,7 +20,7 @@ public class Cita implements Serializable {
     private LocalTime hora;
     
     @Column(nullable=false)
-    private boolean estado;
+    private String estado;
     
     @ManyToOne
     @JoinColumn(name= "Ciudadano_id", nullable=false)
@@ -38,7 +38,7 @@ public class Cita implements Serializable {
     public Cita() {
     }
 
-    public Cita(LocalDate fecha, LocalTime hora, boolean estado, Ciudadano ciudadano, Usuario usuario, Tramite tramite) {
+    public Cita(LocalDate fecha, LocalTime hora, String estado, Ciudadano ciudadano, Usuario usuario, Tramite tramite) {
         this.fecha = fecha;
         this.hora = hora;
         this.estado = estado;
@@ -71,11 +71,11 @@ public class Cita implements Serializable {
         this.hora = hora;
     }
 
-    public boolean isEstado() {
+    public String getEstado() {
         return estado;
     }
 
-    public void setEstado(boolean estado) {
+    public void setEstado(String estado) {
         this.estado = estado;
     }
 

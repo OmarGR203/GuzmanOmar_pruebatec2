@@ -14,7 +14,6 @@ public class Ciudadano implements Serializable {
     @Column(nullable=false)
     private String nombre;
     
-    @Column(nullable=false)
     private String aPaterno;
     private String aMaterno;
     

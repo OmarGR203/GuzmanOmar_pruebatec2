@@ -11,7 +11,7 @@
        <div class="global-container">
 	<div class="card login-form">
 	<div class="card-body">
-		<h3 class="card-title text-center">Login Sistema Citas</h3>
+		<h3 class="card-title text-center">Login Sistema de Citas</h3>
 		<div class="card-text">
 
 			<form action="LoginSv" method="GET">

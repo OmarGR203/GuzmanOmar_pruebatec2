@@ -1,12 +1,15 @@
 package com.hackaboss.servlets;
 
 import com.hackaboss.logica.ControladoraLogica;
+import com.hackaboss.logica.Tramite;
 import java.io.IOException;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 @WebServlet(name = "TramiteSv", urlPatterns = {"/TramiteSv"})
 public class TramiteSv extends HttpServlet {
@@ -20,6 +23,12 @@ public class TramiteSv extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+ 
+        List<Tramite> listaTramites = control.traerTramites();
+        HttpSession miSesion = request.getSession();
+        miSesion.setAttribute("listaTramites", listaTramites);
+        
+         response.sendRedirect("gestionTramites.jsp");
 
     }
 
@@ -31,7 +40,7 @@ public class TramiteSv extends HttpServlet {
 
         control.crearTramite(nombre, descripcion);
 
-        response.sendRedirect("gestionTramite.jsp");
+        response.sendRedirect("gestionTramites.jsp");
 
     }
 

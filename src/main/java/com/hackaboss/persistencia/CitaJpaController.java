@@ -1,22 +1,23 @@
-
 package com.hackaboss.persistencia;
 
 import com.hackaboss.logica.Cita;
+import com.hackaboss.logica.Usuario;
 import com.hackaboss.persistencia.exceptions.NonexistentEntityException;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Query;
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.NoResultException;
 import javax.persistence.Persistence;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-
 public class CitaJpaController implements Serializable {
-    
-    public CitaJpaController(){
+
+    public CitaJpaController() {
         emf = Persistence.createEntityManagerFactory("turneroPU");
     }
 
@@ -132,5 +133,21 @@ public class CitaJpaController implements Serializable {
             em.close();
         }
     }
-    
+
+    List<Cita> findCitasByFilters(LocalDate busquedaFecha, String busquedaEstado) {
+        EntityManager em = getEntityManager();
+
+        try {
+            String consulta = "SELECT cita FROM Cita cita WHERE cita.estado = :busquedaEstado AND cita.fecha = :busquedaFecha";
+            Query query = em.createQuery(consulta);
+            query.setParameter("busquedaEstado", busquedaEstado);
+            query.setParameter("busquedaFecha", busquedaFecha);
+            return query.getResultList();
+        } catch (NoResultException e) {
+            return null;
+        } finally {
+            em.close();
+        }
+    }
+
 }

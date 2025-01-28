@@ -1,5 +1,4 @@
 
-
 <%@page import="com.sun.tools.javac.util.List"%>
 <%@page import="com.hackaboss.logica.Tramite"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -14,13 +13,12 @@
     <body>
         <div class="container mt-4">
             <h1>Crear Cita</h1>
-            <form action="CitaSv" method="POST">
+            <form action="CiudadanoSv" method="POST">
 
                 <div class="form-group">
                     <label for="fecha">Fecha:</label>
                     <input type="date" class="form-control" id="fecha" name="fecha" required>
                 </div>  
-
                 <div class="form-group">
                     <label for="hora">Hora:</label>
                     <input type="time" class="form-control" id="hora" name="hora"required>
@@ -30,25 +28,14 @@
                     <input type="text" class="form-control" id="curpCiud" name="curpCiud" required>
                 </div> 
                 <div class="form-group">
-                    <label for="nombreTramite">Tramite:</label>
-                    <select class="form-select" id="nombreTramite" name="nombreTramite" required>
-                        <option value="">Seleccione un trámite</option> 
-                                             <% 
-                         //traer la lista de Personas
-                        List<Tramite> listaTramites = (List) request.getSession().getAttribute("listaTramites");
-                        if (listaTramites!=null) { 
-                        
-                        for (Tramite trat:listaTramites) { %>
-                        <option><%=trat.getNombre()%></option>
-                             <% 
-                         }
-                     %>
-                    </select>
+                    <label for="nombreTramite">Trámite:</label>
+                    <input type="text" class="form-control" id="nombreTramite" name="nombreTramite" required>
                 </div> 
 
-
                 <button type="submit" class="btn btn-primary">Guardar</button>
-
+            </form>
+            <form action="index.jsp">
+                <button type="submit" class="btn btn-secondary">Cancelar</button>
             </form>
         </div>
 
