@@ -50,12 +50,12 @@ Este proyecto es un sistema de gestión de citas que permite a un unico superusu
 - Al crear la cita el superusuario cuenta y escribe correctamente el nombre del tramite y el curp del ciudadano.
   
 ## Contraseñas de prueba
-- Superusuario:
-  **Email:** admin@hackaboss.com
-  **Contraseña:** 123
-- TomCat:
-**Usuario:** admin
-**Contraseña:** 123
+* Superusuario:
+- **Email:** admin@hackaboss.com
+- **Contraseña:** 123
+* TomCat:
+- **Usuario:** admin
+- **Contraseña:** 123
 
 ## Diagramas
 
