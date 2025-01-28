@@ -8,20 +8,12 @@ Este proyecto es un sistema de gestión de citas que permite a un unico superusu
 - **Gestor de Ciudadanos**: Permite registrar y administrar información de los ciudadanos.
 - **Trámites Disponibles**: Lista y gestiona los diferentes trámites gubernamentales.
 - **Estado de Citas**: Visualización y actualización del estado de las citas (en espera, atendida).
-## Clases
+## Clases Principales
 
-### Entidades:
-
-- **Ciudadano**: Representa a un ciudadano con información como nombre, apellidos, CURP y teléfono.
+- **Ciudadano**: Representa a un ciudadano con información como nombre, apellidos, CURP (Clave Única de Registro de Población) y teléfono.
 - **Tramite**: Define un trámite disponible con nombre y descripción.
 - **Usuario**: Administra la información de los usuarios del sistema, como correo y contraseña.
 - **Cita**: Representa una cita con fecha, hora, estado y las relaciones correspondientes.
-
-### Servlets:
-
-- **CrearCitaServlet**: Gestiona la lógica para crear una nueva cita.
-- **EliminarCitaServlet**: Permite eliminar citas existentes.
-- **EditarCitaServlet**: Maneja la edición de citas.
 
 ## Métodos Principales
 
@@ -54,7 +46,16 @@ Este proyecto es un sistema de gestión de citas que permite a un unico superusu
 - Los trámites disponibles son definidos previamente por un administrador.
 - El estado inicial de cada cita es "En espera" al ser creada.
 - El número de cita se considero como el id general.
-
+- El superusurio debe de registar con anterioridad al ciudadano y/o tramite.
+- Al crear la cita el superusuario cuenta y escribe correctamente el nombre del tramite y el curp del ciudadano.
+  
+## Contraseñas de prueba
+- Superusuario:
+  **Email:** admin@hackaboss.com
+  **Contraseña:** 123
+-TomCat:
+**Usuario:** admin
+**Contraseña:** 123
 
 ## Diagramas
 
