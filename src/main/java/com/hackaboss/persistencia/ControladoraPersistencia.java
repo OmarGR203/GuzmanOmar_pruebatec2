@@ -37,7 +37,7 @@ public class ControladoraPersistencia {
 
     public Tramite buscarTramitePorNombre(String nombreTramite) {
         
-     return ciudadanoJpa.findTramitebyNombre(nombreTramite);
+     return tramiteJpa.findTramiteByNombre(nombreTramite);
         
     }
 

@@ -78,7 +78,7 @@
 
 
                     <!-- Filtros -->
-                    <form action="CitasSv" method="POST">
+                    <form action="CitaSv" method="POST">
                         <div class="card mb-4">
                             <div class="card-body">
                                 <div class="row g-3">

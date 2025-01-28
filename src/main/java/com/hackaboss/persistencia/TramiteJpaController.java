@@ -2,7 +2,6 @@
 package com.hackaboss.persistencia;
 
 import com.hackaboss.logica.Tramite;
-import com.hackaboss.logica.Usuario;
 import com.hackaboss.persistencia.exceptions.NonexistentEntityException;
 import java.io.Serializable;
 import java.util.List;

@@ -51,6 +51,8 @@ public class CitaSv extends HttpServlet {
 
         String curp = request.getParameter("curp");
         Ciudadano ciudadano = control.traerCiudadanoCurp(curp);
+        
+
 
         String emailUsu = (String) request.getSession().getAttribute("email");
         Usuario usuario = control.buscarUsuarioPorEmail(emailUsu);

@@ -148,9 +148,6 @@ public class CiudadanoJpaController implements Serializable {
         }
     }
 
-    Tramite findTramitebyNombre(String nombreTramite) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
         
    
 

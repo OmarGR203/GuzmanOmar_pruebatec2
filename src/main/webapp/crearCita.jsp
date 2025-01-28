@@ -13,23 +13,23 @@
     <body>
         <div class="container mt-4">
             <h1>Crear Cita</h1>
-            <form action="CiudadanoSv" method="POST">
+            <form action="CitaSv" method="POST">
 
                 <div class="form-group">
                     <label for="fecha">Fecha:</label>
-                    <input type="date" class="form-control" id="fecha" name="fecha" required>
+                    <input type="date" class="form-control" id="fecha" name="fecha">
                 </div>  
                 <div class="form-group">
                     <label for="hora">Hora:</label>
-                    <input type="time" class="form-control" id="hora" name="hora"required>
+                    <input type="time" class="form-control" id="hora" name="hora">
                 </div> 
                 <div class="form-group">
-                    <label for="curpCiud">Curp Ciudadano:</label>
-                    <input type="text" class="form-control" id="curpCiud" name="curpCiud" required>
+                    <label for="curp">Curp Ciudadano:</label>
+                    <input type="text" class="form-control" id="curp" name="curp">
                 </div> 
                 <div class="form-group">
                     <label for="nombreTramite">Trámite:</label>
-                    <input type="text" class="form-control" id="nombreTramite" name="nombreTramite" required>
+                    <input type="text" class="form-control" id="nombreTramite" name="nombreTramite">
                 </div> 
 
                 <button type="submit" class="btn btn-primary">Guardar</button>
