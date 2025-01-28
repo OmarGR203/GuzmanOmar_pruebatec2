@@ -53,7 +53,7 @@ Este proyecto es un sistema de gestión de citas que permite a un unico superusu
 - Superusuario:
   **Email:** admin@hackaboss.com
   **Contraseña:** 123
--TomCat:
+- TomCat:
 **Usuario:** admin
 **Contraseña:** 123
 
